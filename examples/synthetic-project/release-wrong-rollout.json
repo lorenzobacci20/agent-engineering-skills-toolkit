@@ -1,0 +1,45 @@
+{
+  "candidate": {
+    "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "digest": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "target": "preview-west",
+    "rollout": "rollout-42"
+  },
+  "stages": {
+    "implementation": {
+      "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "evidence": "source-42",
+      "outcome": "passed"
+    },
+    "build": {
+      "commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "digest": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "evidence": "build-42",
+      "outcome": "passed"
+    },
+    "ci": {
+      "commit": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "evidence": "ci-39",
+      "outcome": "passed"
+    },
+    "publication": {
+      "digest": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "evidence": "registry-42",
+      "outcome": "passed"
+    },
+    "deployment": {
+      "digest": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "target": "preview-west",
+      "rollout": "rollout-42",
+      "evidence": "controller-42",
+      "outcome": "passed"
+    },
+    "runtime": {
+      "digest": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "target": "preview-west",
+      "rollout": "rollout-39",
+      "evidence": "smoke-39",
+      "outcome": "passed"
+    }
+  }
+}
